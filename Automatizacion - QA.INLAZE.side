@@ -1,0 +1,862 @@
+{
+  "id": "b49966a1-534b-421b-b499-034c1dff2239",
+  "version": "2.0",
+  "name": "Automatizacion - QA.INLAZE",
+  "url": "https://test-qa.inlaze.com",
+  "tests": [{
+    "id": "085f2d7d-ee92-4b06-a21b-b77f9be2d045",
+    "name": "Registro de Usuario",
+    "commands": [{
+      "id": "7311b26c-2955-4a7f-a6f5-6b93c46c6b53",
+      "comment": "",
+      "command": "open",
+      "target": "/auth/sign-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8de20276-5eb0-4b0d-bc18-0457ee04a409",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b813135a-49c0-44c7-8f5b-a883e795992d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.text-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/auth/sign-up')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac402359-6b6c-48b0-b8fe-178fb635b742",
+      "comment": "",
+      "command": "click",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3135113c-e572-4fff-9243-e0be88bbbb54",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Andres Sanchez"
+    }, {
+      "id": "1dee372f-677e-419e-ac0a-0d65f121433f",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8558362b-5e60-4ed6-9241-5939eb6d7ef0",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "prueba@prueba.com"
+    }, {
+      "id": "5d033499-2fad-4c3e-ab16-12369a4b4d19",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2024"
+    }, {
+      "id": "a5369b42-55d8-4b88-82ca-4ae088ae9cf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > #confirm-password",
+      "targets": [
+        ["css=.w-full > #confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13d91eb0-4931-494b-89a7-384d3fda33c4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #confirm-password",
+      "targets": [
+        ["css=.w-full > #confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2024"
+    }, {
+      "id": "e2b084a0-0ba5-49d5-a920-b61c0c7b31e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dfd78ac-9a8a-4446-9c0f-d6be5a8c8e9c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ml-3",
+      "targets": [
+        ["css=.ml-3", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": "Successful registration!"
+    }, {
+      "id": "9837cb06-68b0-4fb8-aeda-4e7b00f6bc7f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "04a6b6a8-a611-4238-b21b-d9787b207815",
+    "name": "Validacion Nombre de Usuario",
+    "commands": [{
+      "id": "a8795e46-fde6-43cd-9f63-aa36e3d91dbe",
+      "comment": "",
+      "command": "open",
+      "target": "/auth/sign-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7db8d55-450a-475e-9723-744f8ece99b3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2bb429c-b475-4cc8-86e0-25fe9809c016",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.text-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/auth/sign-up')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab5272ee-53fc-4a80-984b-ab862e5b197e",
+      "comment": "",
+      "command": "click",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb8a863b-13bb-4b41-9dba-d76b94ec789c",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Andres Sanchez"
+    }, {
+      "id": "49dfa9e9-b092-42b3-bffa-a62773f3856a",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=full-name",
+      "targets": [],
+      "value": "Usuario"
+    }, {
+      "id": "45c8ec70-e6bf-4ec8-9c04-6d2fd8cd143c",
+      "comment": "",
+      "command": "echo",
+      "target": "Usuario",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1a32d3b-7699-4a74-bea3-c13f85088910",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${Usuario}.split(' ').length >= 2; ",
+      "targets": [],
+      "value": "result"
+    }, {
+      "id": "9692625d-ca9c-44cc-8338-5dae38db29ed",
+      "comment": "",
+      "command": "assert",
+      "target": "result",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "94cb5a79-30b0-462e-9281-daf53caa1195",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "prueba@prueba.com"
+    }, {
+      "id": "4228011d-40f1-4e77-9c19-e3dd18bc050a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b300cd7c-19d5-4bad-b518-21410fd4eb5f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2024"
+    }, {
+      "id": "a197d456-ff0e-4bce-94ea-f82b18fd68c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#password .btn",
+      "targets": [
+        ["css=#password .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ec31716-e3be-48cb-ac1f-a666a6f14b18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > #confirm-password",
+      "targets": [
+        ["css=.w-full > #confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0ec84ec-d1cb-4ddb-bcb8-a008317c9c92",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #confirm-password",
+      "targets": [
+        ["css=.w-full > #confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2024"
+    }, {
+      "id": "64869050-b9b3-4958-9e97-aaedeb4674f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#confirm-password .btn",
+      "targets": [
+        ["css=#confirm-password .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b87c04cb-2fe7-497c-805b-060286e2db27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b370154-d85f-4774-93ef-41860b924585",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-col:nth-child(2)",
+      "targets": [
+        ["css=.flex-col:nth-child(2)", "css:finder"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fb45068-d29d-4d6c-8499-c5203a082c94",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ml-3",
+      "targets": [
+        ["css=.ml-3", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": "Successful registration!"
+    }, {
+      "id": "91dcbb10-2e9d-4411-b6ab-667bc6bdfcd3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7f229f9b-0e51-4e2d-b5c6-b2aefb4c81ae",
+    "name": "Validacion longitud de Password",
+    "commands": [{
+      "id": "2e93e30a-78f0-4c5f-b34c-75b46ca58cf8",
+      "comment": "",
+      "command": "open",
+      "target": "/auth/sign-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b27ae0e6-8b75-4b72-8d5a-dab6b5467706",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1f9c44f-24c6-4e4e-b331-3acbf5a80bb8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.text-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/auth/sign-up')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "806a3726-6891-4b60-9409-b9a70925330b",
+      "comment": "",
+      "command": "click",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb8fbb1-c0df-4368-8e82-c87fbdbe146b",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Andres Sanchez"
+    }, {
+      "id": "19f5d6bb-42a5-4d93-bdda-1ea9c62084a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf8fe554-c175-4d6b-a250-8826afa5f732",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "prueba@prueba.com"
+    }, {
+      "id": "0472c285-c058-4676-a8b8-632a7f269e21",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "009725c0-e57a-44bd-bbde-7c577cee5e46",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2024"
+    }, {
+      "id": "fe996fd7-c9ec-4db7-a3ae-5a3b51153fb6",
+      "comment": "",
+      "command": "storeValue",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": "Contraseña"
+    }, {
+      "id": "0844995c-ff95-4c7d-be0e-573e1009e923",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return /^(?=.*[A-Z])[a-zA-Z0-9]{8,}$/.test(${Contraseña})",
+      "targets": [],
+      "value": "result"
+    }, {
+      "id": "f96e99b5-4fc9-4d4a-8c92-1c7edca6e884",
+      "comment": "",
+      "command": "assert",
+      "target": "result",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "30243f4f-88c2-44db-b47a-49f8a9ccacd2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#password .btn",
+      "targets": [
+        ["css=#password .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "602ee126-06b8-4455-b95a-e5ee3b8f9a27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > #confirm-password",
+      "targets": [
+        ["css=.w-full > #confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2647b073-bebd-466c-8649-2c8e63a42699",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #confirm-password",
+      "targets": [
+        ["css=.w-full > #confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2024"
+    }, {
+      "id": "7e301ac2-6cfa-4818-a02a-1ec47417bd78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-eye",
+      "targets": [
+        ["css=.fa-eye", "css:finder"],
+        ["xpath=//app-password[@id='confirm-password']/div/button/i", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4168f4b2-85da-4aa2-be49-cb9ec48a2724",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94bb4082-1d23-437f-bb9e-112b71521da6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-3",
+      "targets": [
+        ["css=.ml-3", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "861643c8-1045-46ea-9f0b-a3724832e277",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ml-3",
+      "targets": [
+        ["css=.ml-3", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": "Successful registration!"
+    }]
+  }, {
+    "id": "9caee8cb-0bab-44b2-9423-40b7528017cd",
+    "name": "Validacion Password no coinsiden",
+    "commands": [{
+      "id": "8856413f-3c29-4127-a451-51895550d5bf",
+      "comment": "",
+      "command": "open",
+      "target": "/auth/sign-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e878385-cb05-4595-904e-960422562b8e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae85e8f7-cdf8-49ee-b42d-2917104c9686",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.text-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/auth/sign-up')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ec21f5f-ac5e-4a57-b6a5-245d318c7e42",
+      "comment": "",
+      "command": "click",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70aa76a4-35a6-454e-b0bc-81f0f8e0610c",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Andres Sanchez"
+    }, {
+      "id": "619071f1-d187-4b83-8a12-8eca31dbe5e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e47302f-d08f-4c6b-a89b-6750a37c3761",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "prueba@prueba.com"
+    }, {
+      "id": "27c96e90-90de-45c2-84e3-f0fb43ed93a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3c605a3-97a3-4776-b889-1af641cb9d1d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2024"
+    }, {
+      "id": "005279d8-98a3-48ae-9d46-790b0a1b0949",
+      "comment": "",
+      "command": "click",
+      "target": "css=#password .fa-solid",
+      "targets": [
+        ["css=#password .fa-solid", "css:finder"],
+        ["xpath=//app-password[@id='password']/div/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ad4f6af-b80c-4551-af28-c61f29c17c76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > #confirm-password",
+      "targets": [
+        ["css=.w-full > #confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7a1cc69-070b-4e8e-8ff3-7d24d51ad937",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #confirm-password",
+      "targets": [
+        ["css=.w-full > #confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2023"
+    }, {
+      "id": "000d99a6-018f-43a8-9692-8617117039bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#confirm-password .btn",
+      "targets": [
+        ["css=#confirm-password .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//app-password[@id='confirm-password']/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/app-password/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99694a57-b582-4f5a-8d45-09936d535781",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.label-text-alt",
+      "targets": [
+        ["css=.label-text-alt", "css:finder"],
+        ["xpath=//label[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Passwords do not match')]", "xpath:innerText"]
+      ],
+      "value": "Passwords do not match"
+    }]
+  }, {
+    "id": "b870d99d-5101-40eb-aa33-5d95117b3bfb",
+    "name": "Login exitoso",
+    "commands": [{
+      "id": "56246589-68a2-4c27-bb32-6ce2a154e3b1",
+      "comment": "",
+      "command": "open",
+      "target": "/auth/sign-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11fea235-1029-484b-ba4e-92979ed71fdb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49e57c47-832e-46e8-81bc-d6b2904682dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3586017b-a4a1-4bec-87e5-edf47011b413",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "prueba@prueba.com"
+    }, {
+      "id": "f73d3d17-be92-4af5-9c4f-bd3ad6fea0f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4683aa7-9aa8-4dd2-80cb-2af0fb96292c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.w-full > #password",
+      "targets": [
+        ["css=.w-full > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/input", "xpath:idRelative"],
+        ["xpath=//app-password/div/input", "xpath:position"]
+      ],
+      "value": "Colombia2024"
+    }, {
+      "id": "da1cba91-bbb8-4f10-93c4-ae083004ecdd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//app-password[@id='password']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc7dbabc-bd11-48d9-9c9c-8b22b1510563",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8df30b44-d8ad-4919-92a2-5de32e80c71d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Inlaze - QA Test Front",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36349bfd-daf9-4a6a-8a97-24387d55b155",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.font-extrabold",
+      "targets": [
+        ["css=.font-extrabold", "css:finder"],
+        ["xpath=//section/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Welcome to Lorem')]", "xpath:innerText"]
+      ],
+      "value": "Welcome to Lorem"
+    }, {
+      "id": "78ed44a8-5a62-4d8b-ad3e-cc64deb151ec",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex > .font-bold",
+      "targets": [
+        ["css=.flex > .font-bold", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Andres Sanchez')]", "xpath:innerText"]
+      ],
+      "value": "Andres Sanchez"
+    }, {
+      "id": "5464338c-6e60-4318-a40d-a9799530a195",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "447c4299-3622-45a8-a096-cc6f55836464",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://test-qa.inlaze.com/"],
+  "plugins": []
+}
